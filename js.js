@@ -9,7 +9,10 @@ var rate = 0;
 for (let i = 0; i < ratings.length; i++) {
   ratings[i].addEventListener("click", () => {
     rate = ratings[i].innerText;
-
+    for (let j = 0; j < ratings.length; j++) {
+      ratings[j].style.backgroundColor = "hsl(216, 12%, 54%)";
+      
+    }
     for (let j = 0; j < rate; j++) {
       ratings[j].style.backgroundColor = "yellow";
     }
