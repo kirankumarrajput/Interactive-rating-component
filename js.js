@@ -2,7 +2,7 @@ const btn = document.querySelector(".btn");
 const ThankYouPage = document.querySelector(".thankyou");
 const ratings = document.querySelectorAll(".circle");
 const rating = document.querySelector("#rating");
-const firstCard = document.querySelector(".card");
+const evaluationPage = document.querySelector(".evaluation");
 
 var rate = 0;
 
@@ -19,7 +19,7 @@ for (let i = 0; i < ratings.length; i++) {
 }
 
 btn.addEventListener("click", () => {
-  firstCard.style.display = "none";
-  rating.innerHTML = rate;
+  evaluationPage.style.display = "none";
+  rating.innerText = rate;
   ThankYouPage.style.display = "block";
 });
